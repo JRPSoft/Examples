@@ -33,7 +33,6 @@
                 "portable-net45+win8"
             ],
             "dependencies": {
-                "Teste_class_library": "1.0.0"
             }
         }
     },

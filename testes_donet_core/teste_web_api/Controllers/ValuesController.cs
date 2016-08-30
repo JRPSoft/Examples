@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Teste_class_library;
 using teste_web_api.DataAccess;
 using teste_web_api.Models;
 
@@ -40,8 +39,6 @@ namespace teste_web_api.Controllers
         [HttpPut("{id}")]
         public void Put(int id, [FromBody]ValuesModel value, [FromQueryAttribute]string queryid)
         {
-            //teste de import de class library
-            var a = new Class1();
             var valuesDAO = new ValuesDAO();
             value.Id = id;
             valuesDAO.Update(value);
